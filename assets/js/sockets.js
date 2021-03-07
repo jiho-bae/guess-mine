@@ -2,7 +2,7 @@ import { handleDisconnected, handleNewUser } from "./notifications";
 import { handleNewMsg } from "./chat";
 let socket = null;
 
-export const getSocket = () => window.socket;
+export const getSocket = () => socket;
 
 export const updateSocket = (aSocket) => (socket = aSocket);
 
