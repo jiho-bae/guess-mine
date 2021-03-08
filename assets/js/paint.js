@@ -34,7 +34,6 @@ const beginPath = (x, y) => {
 };
 
 const strokePath = (x, y, color = null) => {
-  console.log(color);
   let currentColor = ctx.strokeStyle;
   if (color !== null) {
     ctx.strokeStyle = color;
