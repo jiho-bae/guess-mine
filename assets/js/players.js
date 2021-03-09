@@ -3,6 +3,7 @@ import { disableCanvas, enableCanvas, hideControls, resetCanvas, showControls } 
 
 const board = document.getElementById("jsPBoard");
 const notifs = document.getElementById("jsNotifs");
+const timeBlock = document.getElementById("jsTime");
 
 const addPlayers = (players) => {
   board.innerHTML = "";
@@ -42,3 +43,7 @@ export const handleGameEnded = () => {
 };
 
 export const handleGameStarting = () => setNotifs("Game will start soon");
+
+export const handleCountDown = ({ time }) => {
+  timeBlock.innerText = `time: ${time}`;
+};
